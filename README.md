@@ -6,7 +6,8 @@ Items include potions with a variety of effects like temporarily increasing stat
 
 The possible stats are Str, Agi, and Luk as well as the respective growth potentials for each of these stats. On level up, the player can choose to allocate either 5 points to any stat or .2 points to any growth potential. Str increases damage, Agi increase dodge chance, Luk increases item drop chance from killing monsters.
 
-Levels are procedurally generated through the following algorithm
+Levels are procedurally generated through the following algorithm:
+
 1. A large number of rooms are created with random x, y coordinates and gaussian distributed width and height, mean and stddev dependent on the current level as levels grow larger as the player goes higher in the tower
 2. A room is randomly selected from the list of generated rooms and all rooms that overlap with this room are removed from the list.
 3. Step 2 is repeated until there are no rooms in the list
